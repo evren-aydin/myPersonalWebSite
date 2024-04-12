@@ -1,6 +1,7 @@
 import { useContext } from "react"
 import "../Header.css"
 import { LanguageContext } from "../Context/LanguageContext"
+import resim from "../../public/profile-resim.png";
 
 function Header({changeTheme,theme}) {
 
@@ -22,7 +23,7 @@ const { language,setLanguage,handleSubmit,getTexts,veri } = useContext(LanguageC
       <a href="https://www.linkedin.com/in/evrennaydinn2535/" target="_blank" className="rounded sm:pr-8 bg-white p-2 px-4 text-[#3730a3] font-inter flex items-center gap-1"><img src="../../public/linkedIn.png" alt="linkedIn buton" />LinkedIn</a>
         </div>
       
-        <img className="h-[375px] rounded-lg sm:h-[300px] sm:mt-20 sm:w-56 sm:hidden" src="../../public/profile-resim.png" alt=" resim" />
+        <img className="h-[375px] rounded-lg sm:h-[300px] sm:mt-20 sm:w-56 sm:hidden" src={resim} alt=" resim" />
       
 
       </div>
