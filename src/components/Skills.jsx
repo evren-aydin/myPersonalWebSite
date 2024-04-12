@@ -6,7 +6,7 @@ const { veri } = useContext(LanguageContext);
 
   return (
     <>
-     <section className="skills flex h-[600px] bg-white relative justify-center items-center dark:bg-[#252128]">
+    <section className="skills flex h-[600px] bg-white relative justify-center items-center dark:bg-[#252128]">
 
       <div className="absolute h-[430px] w-[960px] flex gap-36 md:w-[750px] lm:w-[400px] lm:gap-24">
         <h1 className="text-5xl lm:text-3xl font-bold text-[#4832d3] ">{veri.skills}</h1>
