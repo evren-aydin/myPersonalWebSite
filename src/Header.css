@@ -1,0 +1,50 @@
+label{
+    width: 50px;
+    height: 20px;
+    position: relative;
+    display: block;
+    background: rgb(143,136,255);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+label:after{
+    content:"";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top:1px;
+    right:1px;
+    background: #ffe86e;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+input{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+
+}
+
+input:checked+label{
+    background: #5a5a5a;
+}
+input:checked+ label::after{
+    right: 13px;
+    transform: translate(-100%);
+    background: #5a5a5a;
+}
+label:active:after{
+    width: 23px;
+
+}
+label img{
+    position: absolute;
+    width: 15px;
+    top: 2px;
+    z-index:100;
+    visibility: hidden;
+}
+input:checked+label img{
+visibility: visible;
+}
