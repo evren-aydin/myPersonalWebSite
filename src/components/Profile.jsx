@@ -14,7 +14,7 @@ const {veri} = useContext(LanguageContext);
 
       <div className="h-[290px] w-[960px] flex gap-8 md:w-[700px] md:gap-2 lm:w-[490px] sm:flex-col sm:items-center">
         <div className="div1 w-1/3 flex flex-wrap flex-col gap-5 md:gap-1 ">
-          <h2 className="text-white font-inter text-3xl md:text-xl sm:pt-5">{veri.title1}</h2>
+          <h2 className="text-white font-inter text-3xl md:text-xl sm:pt-6">{veri.title1}</h2>
           <ul class="flex flex-col gap-5 md:gap-2">
   <li className="flex items-start">
     <span className="mr-5 font-inter text-yesil md:mr-1 md:text-sm">{veri.dateofbirth}</span>
