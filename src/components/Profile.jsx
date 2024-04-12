@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import { LanguageContext } from "../Context/LanguageContext"
-
+import profil from "../../public/profile-2.png";
 function Profile() {
 
 const {veri} = useContext(LanguageContext);
@@ -39,7 +39,7 @@ const {veri} = useContext(LanguageContext);
           
           
         </div>
-        <img className="div2 rounded-lg w-1/3 shadow-lg md:h-[200px] sm:w-[150px] lm:h-[250px] sm:hidden"  src="../../public/profile-2.png" alt="" />
+        <img className="div2 rounded-lg w-1/3 shadow-lg md:h-[200px] sm:w-[150px] lm:h-[250px] sm:hidden"  src={profil} alt="" />
         <div className="div3 w-1/3 flex flex-col gap-5 ">
           <h2 className="text-white font-inter text-3xl md:text-xl">{veri.title2}</h2>
           <p className="text-white md:text-sm">{veri.paragraf}</p>

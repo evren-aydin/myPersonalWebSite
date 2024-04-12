@@ -2,14 +2,15 @@ import { useContext } from "react"
 import "../Header.css"
 import { LanguageContext } from "../Context/LanguageContext"
 import resim from "../../public/profile-resim.png";
+import moon from "../../public/moon.svg";
+import github from "../../public/github.png";
+import linkedin from "../../public/linkedIn.png";
+
 
 function Header({changeTheme,theme}) {
 
 const { language,setLanguage,handleSubmit,getTexts,veri } = useContext(LanguageContext);
-  // if (!veri) {
-  //   return <div>Loading...</div>; // Or any other loading state representation
-  // }
-  //{veri.welcome_message}
+  
   return (
     <>
     <header className="flex h-[671px] relative justify-center w-full">
@@ -19,8 +20,8 @@ const { language,setLanguage,handleSubmit,getTexts,veri } = useContext(LanguageC
       <p className="text-xl text-white font-inter lm:text-lg sm:text-sm">{veri.about_me} <br /> {veri.about_me2} </p>
 
         <div className="flex flex-row gap-2">
-      <a href="https://github.com/evren-aydin" target="_blank" className="rounded bg-white sm:pr-8 p-2 px-4 text-[#3730a3] font-inter flex items-center gap-1"><img src="../../public/github.png" alt="linkedIn buton" /> Github</a>
-      <a href="https://www.linkedin.com/in/evrennaydinn2535/" target="_blank" className="rounded sm:pr-8 bg-white p-2 px-4 text-[#3730a3] font-inter flex items-center gap-1"><img src="../../public/linkedIn.png" alt="linkedIn buton" />LinkedIn</a>
+      <a href="https://github.com/evren-aydin" target="_blank" className="rounded bg-white sm:pr-8 p-2 px-4 text-[#3730a3] font-inter flex items-center gap-1"><img src={github} alt="linkedIn buton" /> Github</a>
+      <a href="https://www.linkedin.com/in/evrennaydinn2535/" target="_blank" className="rounded sm:pr-8 bg-white p-2 px-4 text-[#3730a3] font-inter flex items-center gap-1"><img src={linkedin} alt="linkedIn buton" />LinkedIn</a>
         </div>
       
         <img className="h-[375px] rounded-lg sm:h-[300px] sm:mt-20 sm:w-56 sm:hidden" src={resim} alt=" resim" />
@@ -51,7 +52,7 @@ const { language,setLanguage,handleSubmit,getTexts,veri } = useContext(LanguageC
             id="darkmode-toggle"
             onChange={changeTheme}
             ></input>
-            <label for="darkmode-toggle"><img src="../../public/moon.svg" alt="Label Icon" /></label>
+            <label for="darkmode-toggle"><img src={moon} alt="Label Icon" /></label>
         
           
         

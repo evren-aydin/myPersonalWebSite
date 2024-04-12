@@ -1,6 +1,9 @@
 import { useContext } from "react"
 import { LanguageContext } from "../Context/LanguageContext"
-
+import twitter from "../../public/icons/twitter-icon.png";
+import icom from "../../public/icons/icon-2.png";
+import mail from "../../public/icons/mail-icon.png";
+import insta from "../../public/icons/insta-icon.png";
 
 function Footer() {
 const {veri}= useContext(LanguageContext);
@@ -19,16 +22,16 @@ const {veri}= useContext(LanguageContext);
         <div className="icons flex flex-row gap-3">
         
         <a href="https://twitter.com/" target="_blank">
-  <img src="../../public/icons/twitter-icon.png" alt="twitter Icon"/>
+  <img src={twitter}alt="twitter Icon"/>
 </a>
 <a href="https://www.google.com/" target="_blank">
-  <img src="../../public/icons/icon-2.png" alt=" Icon"/>
+  <img src={icom} alt=" Icon"/>
 </a>
 <a href="https://outlook.live.com/mail" target="_blank">
-  <img src="../../public/icons/mail-icon.png" alt="mail Icon"/>
+  <img src={mail} alt="mail Icon"/>
 </a>
 <a href="https://www.instagram.com/" target="_blank">
-  <img src="../../public/icons/insta-icon.png" alt="insta Icon"/>
+  <img src={insta} alt="insta Icon"/>
 </a>
 
         </div>
