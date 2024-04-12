@@ -17,7 +17,7 @@ const {veri}= useContext(LanguageContext);
         <img className="div2 rounded-lg w-1/3 shadow-lg sm:hidden"  src={workintech} alt="" />
         <div className="div3 w-2/3 flex flex-col gap-5 justify-center sm:items-center">
           <h2 className="text-mavi font-inter text-3xl font-bold dark:text-[#c1baed]">{veri.workintech}</h2>
-          <p className="pr-9 dark:text-white sm:text-center">{veri.WJparagraf}</p>
+          <p className="pr-9 dark:text-white sm:text-center sm:pr-2">{veri.WJparagraf}</p>
           <div className="flex gap-3">
             <p className="bg-mavi rounded-full text-white w-20 py-1 px-5 dark:bg-[#8173da] ">react</p>
           <p className="bg-mavi rounded-full text-white w-20 py-1 px-5 dark:bg-[#8173da]">redux</p>
@@ -36,7 +36,7 @@ const {veri}= useContext(LanguageContext);
         <img className="div2 rounded-lg w-1/3 shadow-lg sm:hidden"  src={journey} alt="" />
         <div className="div3 w-2/3 flex flex-col gap-5 justify-center sm:items-center">
           <h2 className="text-mavi font-inter text-3xl font-bold dark:text-[#c1baed]">{veri.journey}</h2>
-          <p className="pr-9 dark:text-white sm:text-center">{veri.WJparagraf}</p>
+          <p className="pr-9 dark:text-white sm:text-center sm:pr-2">{veri.WJparagraf}</p>
           <div className="flex gap-3">
             <p className="bg-mavi rounded-full text-white w-20 py-1 px-5 dark:bg-[#8173da] ">react</p>
           <p className="bg-mavi rounded-full text-white w-20 py-1 px-5 dark:bg-[#8173da]">redux</p>

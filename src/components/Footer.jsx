@@ -13,7 +13,7 @@ const {veri}= useContext(LanguageContext);
      <footer className="flex h-[454px] bg-white justify-center items-center dark:bg-[#252128]">
       <div className="w-[483px] h-[290px] flex flex-col items-center justify-between p-10">
 
-        <h1 className="text-4xl font-bold text-mavi dark:text-[#8f88ff]">{veri.baslik}</h1>
+        <h1 className="text-4xl font-bold text-mavi dark:text-[#8f88ff] sm:pl-16">{veri.baslik}</h1>
 
         <p className="text-center text-lg dark:text-white">{veri.message}</p>
 

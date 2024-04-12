@@ -15,9 +15,9 @@ const { language,setLanguage,handleSubmit,getTexts,veri } = useContext(LanguageC
     <>
     <header className="flex h-[671px] relative justify-center w-full">
       
-      <div className="w-[955px] h-[375px] absolute justify-between flex-wrap flex flex-col mt-40 md:w-96 md:mr-96 lm:w-60 lm:ml-36 sm:pl-20 ">
-      <h1 className="text-5xl font-bold pt-20 text-yesil lm:text-3xl sm:font-semibold">{veri.welcome_message} <br /> {veri.welcome_message2}</h1> 
-      <p className="text-xl text-white font-inter lm:text-lg sm:text-sm">{veri.about_me} <br /> {veri.about_me2} </p>
+      <div className="w-[955px] h-[375px] absolute justify-between flex-wrap flex flex-col mt-40 md:w-96 md:mr-96 lm:w-60 lm:ml-36 sm:pl-20 sm:block ">
+      <h1 className="text-5xl font-bold pt-20 text-yesil lm:text-3xl sm:font-semibold sm:pb-3">{veri.welcome_message} <br /> {veri.welcome_message2}</h1> 
+      <p className="text-xl text-white font-inter lm:text-lg sm:pb-2">{veri.about_me} <br /> {veri.about_me2} </p>
 
         <div className="flex flex-row gap-2">
       <a href="https://github.com/evren-aydin" target="_blank" className="rounded bg-white sm:pr-8 p-2 px-4 text-[#3730a3] font-inter flex items-center gap-1"><img src={github} alt="linkedIn buton" /> Github</a>
