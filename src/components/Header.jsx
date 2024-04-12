@@ -30,7 +30,7 @@ const { language,setLanguage,handleSubmit,getTexts,veri } = useContext(LanguageC
 
       <div className="w-2/3 bg-mavi dark:bg-[#171043] static">
         <div className="flex justify-between pt-10">
-          <h2 className="pl-72 pt-10 font-inter text-4xl font-bold text-yesil md:pl-16 sm:mt-14">kemal</h2>
+          <h2 className="pl-72 pt-10 font-inter text-4xl font-bold text-yesil md:pl-16 sm:mt-14">evren</h2>
         <a href="" 
         className="font-inter text-yesil pr-6 dark:text-[#bab2e7]"
         onClick={handleSubmit}
