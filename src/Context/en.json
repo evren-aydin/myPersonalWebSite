@@ -1,8 +1,9 @@
 {
   "welcome_message": "I am a Frontend",
   "welcome_message2":"Developer...",
-  "about_me": "...who likes to craft solid and scalable frontend",
-  "about_me2": "products with great user experiences.",
+  "about_me": "...who likes to craft solid and",
+  "about_me2": "scalable frontend products ",
+  "about_me3":"with great user experiences.",
   "skills": "Skills",
   "profile": "Profile",
   "title1":"Basic Information",

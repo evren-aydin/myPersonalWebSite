@@ -1,8 +1,9 @@
 {
   "welcome_message": "Ben bir Frontend",
   "welcome_message2":"Developer'ım...",
-  "about_me": "...mükemmel kullanıcı deneyimlerine sahip, sağlam ve ölçeklenebilir ön uç",
-  "about_me2": "ürünleri oluşturmayı seven.",
+  "about_me": "...mükemmel kullanıcı deneyimlerine sahip,",
+  "about_me2": "sağlam ve ölçeklenebilir ön uç",
+  "about_me3": "ürünleri oluşturmayı seven.",
   "skills": "Beceriler",
   "profile": "Profil",
   "title1":"Temel Bilgiler",
