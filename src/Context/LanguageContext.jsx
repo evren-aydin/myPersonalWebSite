@@ -7,7 +7,7 @@ export const LanguageContext = createContext();
 
 const LanguageContextProvider = ({ children }) => {
 
-  const getDataFromLocalStorage = () => {
+  const getDataFromLocalStorage = () => {//localStorage'dan data okuma fonksiyonu
   const data = localStorage.getItem('myData');
   return data ? JSON.parse(data) : null;
 };
@@ -25,6 +25,7 @@ const LanguageContextProvider = ({ children }) => {
     const getTexts = () => {
     return language === 'tr' ? tr : en;
   }
+  
   //localStorage kaydetme
 const saveDataToLocalStorage = (data) => {
   localStorage.setItem('myData', JSON.stringify(data));
@@ -40,15 +41,14 @@ const saveDataToLocalStorage = (data) => {
       setVeri(response.data);
       console.log("veriler",veri);
 
-    }).
-    
-    catch((error)=>{console.log(error)})
- 
+    }).catch((error)=>{console.log(error)})
   }
+
 
   useEffect(() => {
   saveDataToLocalStorage(veri);
 }, [veri]);
+
 
 useEffect(() => {
     localStorage.setItem('language', language);
